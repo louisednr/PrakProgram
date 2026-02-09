@@ -1,5 +1,6 @@
 #include<cmath>
 #include<numbers> // c++20
+#include<complex>
 #include"sfuns.h"
 #include<limits>
 
