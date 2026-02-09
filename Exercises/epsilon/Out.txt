@@ -1,0 +1,21 @@
+ float eps= 1.19209e-07
+ double eps= 2.22045e-16
+ long double eps= 2.22045e-16
+ float eps system = 1.19209e-07
+ double eps system = 2.22045e-16
+test 2^-52 = 2.22045e-16
+ long double eps system = 2.22045e-16
+test 2^-23 = 1.19209e-07
+float, double, long double epsilon matches system standard. Since the diffrence between all three sets of numbers is < 1e-50 
+a==b ? false
+a>1  ? false
+b>1  ? true
+Explain result:
+Floating-point addition is not associative because intermediate rounding causes small values to be discarded when added to significantly larger numbers.
+       tiny=0.00000000000000011
+1+tiny+tiny=1.00000000000000000
+tiny+tiny+1=1.00000000000000022
+d1==d2?false
+d1=0.79999999999999993
+d2=0.80000000000000004
+Approx(d1, d2, double acc=1e-9, double eps=1e-9) is1
