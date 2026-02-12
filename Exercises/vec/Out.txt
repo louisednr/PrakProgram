@@ -1,0 +1,21 @@
+ u= 0.185689 0.688531 0.715891 v= 0.694503 0.247127 -0.231237 u=0.185689 0.688531 0.715891
+ v=0.694503 0.247127 -0.231237
+-u  = -0.185689 -0.688531 -0.715891test= -0.185689 -0.688531 -0.715891
+test 'unary -' passed
+
+ u+v = 0.880193 0.935659 0.484655 test= 0.880193 0.935659 0.484655 test '+' passed
+
+u-v = -0.508814 0.441404 0.947128test= -0.508814 0.441404 0.947128 test '-' passed
+
+u*c  = -0.0751913 -0.278808 -0.289886 test= -0.0751913 -0.278808 -0.289886
+test '*' passed
+
+dot(u,v)=0.133577
+ test= 0.133577
+
+test dot passed
+
+Explanation for the difference between traditional and modern forms of operator+
+Old input: (const vec& a, const vec& b) is different from the modern input: (vec a, const vec& b)
+The old had to define a new vector 'r' manually: vec r = a;
+This adds an extra line (higher chance for typos). Instead, can simply edit the copy of the first vector.
