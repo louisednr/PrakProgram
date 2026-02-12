@@ -40,11 +40,20 @@ int main(){
    
 
     for(int i=1;i<=10;i++) {
-        std::cout << "Gamma of " << i << " is: " << sfuns::fgamma(i) <<"\n";
+        std::cout << "My calculated gamma of " << i << " is: " << sfuns::fgamma(i) <<"\n";
     }
 
     for(int i=1;i<=10;i++) {
-        std::cout << "lngamma of " << i << " is: " << sfuns::lngamma(i) <<"\n";
+        std::cout << "cmath gamma of " << i << " is: " << tgamma(i) <<"\n";
+    }
+ 
+
+    for(int i=1;i<=10;i++) {
+        std::cout << "My calculated lngamma of " << i << " is: " << sfuns::lngamma(i) <<"\n";
+    }
+
+    for(int i=1;i<=10;i++) {
+        std::cout << "cmath ln(gamma) of " << i << " is: " << log(tgamma(i)) <<"\n";
     }
 
 

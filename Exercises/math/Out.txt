@@ -6,23 +6,43 @@ pi^(e) = 22.4592
 pi^(i) = (0.413292,0.910598)
 e^(i)    = (0.540302,0.841471)
 i^(i) = (0.207880,0.00000)
-Gamma of 1 is: 1.00000
-Gamma of 2 is: 1.00000
-Gamma of 3 is: 2.00000
-Gamma of 4 is: 6.00000
-Gamma of 5 is: 24.0000
-Gamma of 6 is: 120.000
-Gamma of 7 is: 720.000
-Gamma of 8 is: 5040.00
-Gamma of 9 is: 40320.0
-Gamma of 10 is: 362880.
-lngamma of 1 is: -1.09351e-08
-lngamma of 2 is: -1.09351e-08
-lngamma of 3 is: 0.693147
-lngamma of 4 is: 1.79176
-lngamma of 5 is: 3.17805
-lngamma of 6 is: 4.78749
-lngamma of 7 is: 6.57925
-lngamma of 8 is: 8.52516
-lngamma of 9 is: 10.6046
-lngamma of 10 is: 12.8018
+My calculated gamma of 1 is: 1.00000
+My calculated gamma of 2 is: 1.00000
+My calculated gamma of 3 is: 2.00000
+My calculated gamma of 4 is: 6.00000
+My calculated gamma of 5 is: 24.0000
+My calculated gamma of 6 is: 120.000
+My calculated gamma of 7 is: 720.000
+My calculated gamma of 8 is: 5040.00
+My calculated gamma of 9 is: 40320.0
+My calculated gamma of 10 is: 362880.
+cmath gamma of 1 is: 1.00000
+cmath gamma of 2 is: 1.00000
+cmath gamma of 3 is: 2.00000
+cmath gamma of 4 is: 6.00000
+cmath gamma of 5 is: 24.0000
+cmath gamma of 6 is: 120.000
+cmath gamma of 7 is: 720.000
+cmath gamma of 8 is: 5040.00
+cmath gamma of 9 is: 40320.0
+cmath gamma of 10 is: 362880.
+My calculated lngamma of 1 is: -1.09351e-08
+My calculated lngamma of 2 is: -1.09351e-08
+My calculated lngamma of 3 is: 0.693147
+My calculated lngamma of 4 is: 1.79176
+My calculated lngamma of 5 is: 3.17805
+My calculated lngamma of 6 is: 4.78749
+My calculated lngamma of 7 is: 6.57925
+My calculated lngamma of 8 is: 8.52516
+My calculated lngamma of 9 is: 10.6046
+My calculated lngamma of 10 is: 12.8018
+cmath ln(gamma) of 1 is: 0.00000
+cmath ln(gamma) of 2 is: 0.00000
+cmath ln(gamma) of 3 is: 0.693147
+cmath ln(gamma) of 4 is: 1.79176
+cmath ln(gamma) of 5 is: 3.17805
+cmath ln(gamma) of 6 is: 4.78749
+cmath ln(gamma) of 7 is: 6.57925
+cmath ln(gamma) of 8 is: 8.52516
+cmath ln(gamma) of 9 is: 10.6046
+cmath ln(gamma) of 10 is: 12.8018
