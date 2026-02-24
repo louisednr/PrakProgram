@@ -11,11 +11,14 @@ Out.txt: main
 		./$< > $@ 
 
 
-main: main.o vec.o
+main: main.o
+	$(CXX) $(CXXFLAGS) $^ -o $@
 
-main.o: vec.h
 
-vec.o: vec.h
+
+main.o: vec.h main.cc
+
+
 
 clean: 
 	$(RM) Out.txt main
