@@ -18,4 +18,4 @@ tiny+tiny+1=1.00000000000000022
 d1==d2?false
 d1=0.79999999999999993
 d2=0.80000000000000004
-Approx(d1, d2, double acc=1e-9, double eps=1e-9) is1
+Approx(d1, d2, double acc=1e-9, double eps=1e-9) is = 1

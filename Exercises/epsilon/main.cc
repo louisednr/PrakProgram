@@ -26,7 +26,7 @@ int main(){
     if (std::abs(f - std::numeric_limits<float>::epsilon()) < 1e-50
         && abs(d - std::numeric_limits<double>::epsilon()) < 1e-50
         && abs(l - std::numeric_limits<long double>::epsilon()) < 1e-50)   {
-    std::cout << "float, double, long double epsilon matches system standard. Since the diffrence between all three sets of numbers is < 1e-50 " << std::endl;}
+    std::cout << "float, double, long double epsilon matches system standard. Since the difference between all three sets of numbers is < 1e-50 " << std::endl;}
     
 
     // Exercise 2: Non-commutativity of addition
