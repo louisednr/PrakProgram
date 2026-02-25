@@ -1,0 +1,17 @@
+set terminal svg
+set output "fig2.svg"
+set xlabel "x"
+set ylabel "y"
+set grid
+set title "Gamma Function Approximation vs Table values"
+set key right bottom
+set tics out
+plot [-5:5][-5:5] \
+	"gamma.data" using 1:2  with line title "gamma approx",\
+	"gamma_table.data" using 1:2 with points pointtype 1 title "table values"
+
+
+
+
+
+
