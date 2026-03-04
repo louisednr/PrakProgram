@@ -1,4 +1,4 @@
-CXXFLAGS += -std=c++23 -Wall -O
+CXXFLAGS += -std=c++23 -Wall -O0
 LDLIBS = -lstdc++ -lm -lpthread 
 
 
@@ -6,7 +6,7 @@ LDLIBS = -lstdc++ -lm -lpthread
 TIME = gtime --format "$$nthreads %e %U" --append --output $@
 
 #TIME = /usr/bin/time --format "$$nthreads %e %U" --append --output $@
-N = 1e9
+N = 1e8
 
 times.svg: out.times Makefile
 	echo '\

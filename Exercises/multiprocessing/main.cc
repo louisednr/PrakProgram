@@ -10,16 +10,22 @@ struct data { int a,b; double sum;};
         double sum=0;        // with thread-local variables
         for(int i=a;i<b;i++)sum+=1.0/i;
         arg.sum=sum; // only write once into memory
+
+        
     }
 
 
+
+
+
 int main(int argc, char** argv){
-    int nthreads = 1, nterms = (int)1e8; /* default values */
+    int nthreads = 1;
+    long nterms = 1000000000L; /* default values */
 
     for(int i=0;i<argc;i++) {
         std::string arg = argv[i];
         if((arg=="-threads" || arg == "-nthreads") && i+1<argc) nthreads=std::stoi(argv[i+1]);
-        if(arg=="-terms" && i+1<argc) nterms=std::stoi(argv[i+1]);
+        if(arg=="-terms" && i+1<argc) nterms = (long long)std::stod(argv[i+1]);
     }
 
 
