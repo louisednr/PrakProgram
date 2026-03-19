@@ -64,23 +64,32 @@ namespace pp{
 
 
         matrix<T> inverse() const {
+
+            //backsubs 
+
+            // find Q^T since I will need it a lot :)
+            // then use R*x=Q^T[ith columb], since I know e[i] are unit vectors
+            // retrun inverse
+
+
             int n = Q.size1();
             matrix<T> B(n,n);
 
-            vector<T> e(n);
+
+            matrix<T> QT = Q.transpose();
+
 
             for (int i=0; i<n; i++) {
 
-                e[i] =1;
+                // definining i'th column of  Q^T as a vector
+                // because this is Q^T*e_i
+        
+                vector<T> qt_col = QT[i];
 
-                vector<T> x_i = solve(e);
+                // instead of using solve, use backsubs
+                vector<T> x_i = backsub(R, qt_col);
 
-                for (int j=0; j<n; j++) {
-                    B[j,i] = x_i[j];
-                }
-
-                e[i]=0;
-
+                B[i]= x_i;
 
             }
             return B;

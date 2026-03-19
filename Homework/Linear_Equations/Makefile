@@ -25,8 +25,10 @@ times.svg: out.times.data Makefile
 	echo '\
 		set terminal svg ;\
 		set output "$@" ;\
+		set title "Operations count for QR-decomposition";\
 		set xlabel "Matrix dimensions" ;\
 		set ylabel "Real time in (s)" ;\
+		set grid;\
 		set key top left Left reverse; \
 		a = 0.5; b = 0.5; c = 0.5; d = 0.5; \
 		f(x) = a*x*x*x + b*x*x + c*x + d ;\
@@ -35,7 +37,6 @@ times.svg: out.times.data Makefile
 			"$<" using 1:2 with points lt 7 title "qr time dependance" \
 			, f(x) with lines title "fititng to cubic equation O(N^3)" ;\
 		' | tee log.times | gnuplot
-
 
 
 
