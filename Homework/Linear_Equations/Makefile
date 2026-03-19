@@ -13,7 +13,7 @@ Out.txt: main Makefile
 
 
 
-
+ 
 
 out.times.data : main 
 	> $@
@@ -35,8 +35,6 @@ times.svg: out.times.data Makefile
 			"$<" using 1:2 with points lt 7 title "qr time dependance" \
 			, f(x) with lines title "fititng to cubic equation O(N^3)" ;\
 		' | tee log.times | gnuplot
-
-
 
 
 
