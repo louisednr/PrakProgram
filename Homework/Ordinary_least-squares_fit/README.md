@@ -1,20 +1,18 @@
-# Homework: "Linear Equations"
+# Homework: Least Squares Fit
 
-
-This project implements a linear algebra library in C++ for solving systems of linear equations, calculating matrix inverses, and finding determinants using QR decomposition.
+This project implements a **General Least Squares** solver using QR decomposition. It features a physics application: analyzing the radioactive decay of Thorium X (Ra-224) using historical data from Rutherford and Soddy (1902).
 
 ## Features
-- **Custom Matrix/Vector Classes**: Column-major storage using `std::vector`.
-- **QR Decomposition**: Implemented with the **Modified Gram-Schmidt** process.
-- **Linear Solver**: Solves $QRx = b$ using back-substitution.
-- **Matrix Inverse**: Computes $A^{-1}$ by solving $Ax_i = e_i$ for each unit vector $e_i$.
-- **Time dependance**: Includes plotting to check the $O(N^3)$ time dependance of the QR factorization.
+- **Least Squares Solver**: Computes best-fit coefficients and the **covariance matrix** using QR decomposition.
+- **Uncertainty Estimation**: Extracts parameter errors ($\delta a$, $\delta \lambda$) from the diagonal of the covariance matrix.
+- **Data Linearization**: Fits the exponential model $y = ae^{-\lambda t}$ by transforming it to the linear form $\ln(y) = \ln(a) - \lambda t$.
+- **Automated Plotting**: Integrated `gnuplot` support to generate `decay.svg`, displaying the raw data, best-fit curve, and confidence intervals.
 
 ## Prerequisites
-- **Compiler**: A C++ compiler supporting C++23.
-- **Tools**: `make` for building and `gnuplot` for generating time dependance plot.
+- **Compiler**: A C++ compiler supporting C++23 (e.g., GCC 12+).
+- **Tools**: `make` for building and `gnuplot` for generating the decay plot.
 
 ## Quick Start
-To compile the project, run the tests, and generate the performance graph, use:
+To compile the code, perform the fit, and generate the SVG plot, run:
 ```bash
 make
