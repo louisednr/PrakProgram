@@ -24,7 +24,7 @@ To compile the code, run the verification tests, and generate the SVG plots (`pl
 
 ```bash
 make
-
+```
 
 To remove the compiled executable, all intermediate data files (`.txt`), and the generated plots (`.svg`), use the following command:
 
