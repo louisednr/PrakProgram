@@ -37,6 +37,9 @@ int main(){
     std::cout << "e^(i)    = " << std::pow(std::numbers::e,I) << std::endl;
 
     std::cout << "i^(i) = " << pow(I, I) << std::endl;
+
+    std::cout << "log(i) = " << std::log(I) << std::endl;
+
    
 
     for(int i=1;i<=10;i++) {

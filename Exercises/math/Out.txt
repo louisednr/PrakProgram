@@ -6,6 +6,7 @@ pi^(e) = 22.4592
 pi^(i) = (0.413292,0.910598)
 e^(i)    = (0.540302,0.841471)
 i^(i) = (0.207880,0.00000)
+log(i) = (0.00000,1.57080)
 My calculated gamma of 1 is: 1.00000
 My calculated gamma of 2 is: 1.00000
 My calculated gamma of 3 is: 2.00000
