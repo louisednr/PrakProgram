@@ -57,7 +57,7 @@ int main(){
     std::cout << "d1=" << d1 << "\n";
     std::cout << "d2=" << d2 << "\n";
 
-    std::cout << "Approx(d1, d2, double acc=1e-9, double eps=1e-9) is = "  << approx(d1,d2) <<"\n";
+    std::cout << "Approx(d1, d2, double acc=1e-9, double eps=1e-9) is = "  << std::format("{}\n", approx(d1,d2)) <<"\n";
 
     
 
