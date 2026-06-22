@@ -16,3 +16,4 @@ make
 To remove the compiled executable, all intermediate data files (`.txt`), and the generated plots (`.svg`), use the following command:
 
 ```bash
+clean
