@@ -1,6 +1,6 @@
 # Homeworks guide
 
-Unless noted all homeworks are programmed to run all solved exercises by
+For easy use unless noted all homeworks are run by
 
 ```bash
 make
