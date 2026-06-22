@@ -17,3 +17,4 @@ To remove the compiled executable, all intermediate data files (`.txt`), and the
 
 ```bash
 clean
+```
