@@ -1,0 +1,7 @@
+Successfully loaded 0 data points from stdin.
+
+=== Fit Results ===
+Calculated Higgs Mass (m):     126 GeV/c^2
+Experimental Width (Gamma):   3 GeV
+Fitted Scale Factor (A):       15
+Final Residual Variance Value: 0
