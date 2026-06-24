@@ -1,0 +1,11 @@
+Running ANN tests...
+--- Part A ---- 
+
+Generating 20 training points on [-1, 1]...
+Training the network (Newton minimization) ...
+Training done
+
+ data saved to 'data.txt'.
+--- Part B ---- 
+
+ derivatives data saved to 'derivatives_data.txt'.
