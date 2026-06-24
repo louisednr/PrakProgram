@@ -2,12 +2,7 @@ CXXFLAGS += -std=c++23 -I. -Wall -Wextra -Werror
 LDLIBS += -lstdc++ -lm
 
 
-
-all: Out.txt comparison.svg error_plot.svg
-
-#Out.txt: main Makefile
-#	@echo "Running Integration Tests..." > $@
-#	./main >> Out.txt
+all: Out.txt error_plot.svg comparison.svg
 
 Out.txt: main compare.py Makefile
 	@echo "--- Running C++ Integration Tests ---" > $@
@@ -16,13 +11,9 @@ Out.txt: main compare.py Makefile
 	@echo "--- Running Python/SciPy Benchmarks ---" >> $@
 	python3 compare.py >> $@
 
-# finding rows begining with numbers and putting into data file
-error_data.txt: Out.txt
-	grep -E "^[0-9]" Out.txt > error_data.txt || true
-
 # plot
 # AI genereated 
-error_plot.svg: error_data.txt
+error_plot.svg: erf_error.txt
 	gnuplot -e "\
 		set terminal svg background 'white'; \
 		set output '$@'; \
@@ -31,7 +22,7 @@ error_plot.svg: error_data.txt
 		set logscale xy; \
 		set format x '%.0e'; \
 		set title 'Erf(1) Integration Error vs Target Accuracy'; \
-		plot 'error_data.txt' using 1:2 with linespoints title 'Actual Error', x title 'Ideal Line (Error = acc)' lc rgb 'gray' dt 2 \
+		plot 'erf_error.txt' using 1:2 with linespoints title 'Actual Error', x title 'Ideal Line (Error = acc)' lc rgb 'gray' dt 2 \
 	"
 # end AI generated
 
@@ -42,4 +33,4 @@ main: main.cc
 	$(CXX) $(CXXFLAGS) main.cc -o main
 
 clean:
-	$(RM) Out.txt error_data.txt error_plot.svg comparison.svg main
+	$(RM) Out.txt erf_error.txt error_plot.svg comparison.svg main

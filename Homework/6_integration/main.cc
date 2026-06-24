@@ -4,7 +4,8 @@
 #include <cmath>
 #include <functional>
 #include <limits>
-#include <utility> // For std::pair
+#include <utility> // for std::pair
+#include <fstream>
 
 
 int ncalls = 0;
@@ -179,15 +180,19 @@ int main() {
 
     // data for plot
     std::cout << "--- Part 3: Data for plot ---\n";
-    std::cout << "# acc \t\t actual_error\n";
-    
+
+    std::ofstream erf_file("erf_error.txt");
     double acc_target = 0.1;
     for (int i = 0; i < 8; ++i) {
         double res = erf(1.0, acc_target, 0.0);
         double actual_error = std::abs(res - exact_erf1);
+      
         std::cout << acc_target << "\t" << actual_error << "\n";
+        erf_file << acc_target << "\t" << actual_error << "\n";
+        
         acc_target /= 10.0;
     }
+    erf_file.close();
 
     std::cout << "------------------------"  << "\n";
     std::cout << "--- B ---\n";
@@ -249,9 +254,6 @@ int main() {
     std::cout << "x^2 * exp(-x) from 0 to inf | Exact: 2.0\n";
     std::cout << "   Calculated: " << res_inf_2 << " | Evaluations: " << ncalls << "\n\n";
 
-    std::cout << "------------------------\n";
-    std::cout << "--- C ---\n";
-    std::cout << "------------------------\n";
 
     // --- Exercise C verification printing ---
     std::cout << "------------------------\n";
