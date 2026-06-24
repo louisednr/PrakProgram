@@ -1,0 +1,9 @@
+Fit results for ThX decay:
+Initial activity (a): 142.4035
+Decay Ccnstant (lambda): 0.1706 days^-1
+Uncertainty in lambda: 0.0072
+Half-life: 4.0624 days
+Uncertainty in half-life: 0.1704
+Ra-224 decays by ɑ decay with a half-life of 3.6316(23) days.
+Modern half-live - calculated half-life = -0.4308
+Result does NOT agrees with the modern value within the estimated uncertainty
