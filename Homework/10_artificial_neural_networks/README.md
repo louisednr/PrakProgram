@@ -1,7 +1,7 @@
 # Homework: Artificial Neural Networks
 
 Part A implements a simple artificial neural network which will be trained to interpolate a `g(x)=Cos(5*x-1)*exp(-x*x)`, this is done using 10 nodes. Part B modifies the network so it can also return the first and second derivatives and also the anti-derivative of the approximant to the tabulated function.
-
+  
 ## Plots
 - **Part A**: `interpolation_plot.svg`
 - **Part B**: `calc_plot.svg`
