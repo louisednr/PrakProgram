@@ -1,0 +1,20 @@
+Running root tests...
+--- Part A ---
+
+--- Test 1: 1D function ---
+f(x) = x^3 - 2x - 5 = 0 (root at 2.0946 accoridng to wolframalpha)
+Starting from: [2.000000e+00] -> found root: [2.094551e+00]
+
+--- Test 2: Rosenbrock's valley function gradient roots ---
+--- Extremum at (1,1), if choose a=1 and b=100 ---
+Starting from: [-1.000000e+00, 1.000000e+00] -> found extremum: [1.000000e+00, 1.000000e+00]
+
+--- Test 3: Himmelblau's function gradient roots ---
+According to wiki has minimums at (3.0, 2.0), (-2.8, 3.1), (-3.8, -3.3) and (3.6, -1.8)
+Guess 1: [3.000000e+00, 1.000000e+00] -> found minimum: [3.385154e+00, 7.385188e-02]
+Guess 2: [-3.000000e+00, 3.000000e+00] -> found minimum: [-2.805118e+00, 3.131313e+00]
+Guess 3: [-3.500000e+00, -3.500000e+00] -> found minimum: [-3.779310e+00, -3.283186e+00]
+Guess 4: [3.500000e+00, -3.500000e+00] -> found minimum: [3.584428e+00, -1.848127e+00]
+--- Part B ---
+
+Data collection completely successfully compiled into .dat files.

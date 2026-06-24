@@ -1,0 +1,42 @@
+--- Running C++ Integration Tests ---
+------------------------\n--- A ---
+------------------------\n--- Part 1: Testing integrals ---
+1) sqrt(x)         | Calc: 6.669539090547e-01 | Exact: 0.66666666667 | Calls: 16
+2) 1/sqrt(x)       | Calc: 1.999961380871e+00 | Exact: 2.000000000000 | Calls: 392
+3) sqrt(1-x^2)     | Calc: 7.858124937216e-01 | Exact: 1.570796326795e+00 | Calls: 16
+4) ln(x)/sqrt(x)   | Calc: -3.999912854449e+00 | Exact: -4.00000000000 | Calls: 416
+
+--- Part 2: Error Function ---
+erf(1) (acc=1e-7): 8.427007930179e-01
+Exact erf(1)     : 8.427007929497e-01
+
+--- Part 3: Data for plot ---
+# acc 		 actual_error
+1.000000000000e-01	1.904253056616e-04
+1.000000000000e-02	1.904253056616e-04
+1.000000000000e-03	2.916553748378e-05
+1.000000000000e-04	4.295576911950e-07
+1.000000000000e-05	2.822738143227e-08
+1.000000000000e-06	1.249646053303e-09
+1.000000000000e-07	3.842259843623e-11
+1.000000000000e-08	2.131628207280e-12
+------------------------\n--- B ---
+------------------------\n--- Part 1: open quandrature adaptive integrator with the Clenshaw–Curtis variable transformation ---
+Integral 1:  1/sqrt(x) | Exact: 2.0
+   Ordinary:   1.999999545014e+00 | # Evaluations: 5232
+   C-Curtis:   1.999999999938e+00 | # Evaluations: 352
+
+Integral 2 ln(x)/sqrt(x) | Exact: -4.0
+   Ordinary:   -3.999978086182e+00 | # Evaluations: 10816
+   C-Curtis:   -3.999999522223e+00 | # Evaluations: 2004
+
+--- Part 2: Test on some (converging) infitine limit integrals ---
+ exp(-x^2) from -inf to inf | Exact: 1.772453850906e+00
+   Calculated: 1.772453829939e+00 | Evaluations: 1128
+
+x^2 * exp(-x) from 0 to inf | Exact: 2.0
+   Calculated: 1.999999949619e+00 | Evaluations: 1336
+
+
+--- Running Python/SciPy Benchmarks ---
+Successfully generated 'comparison.svg'

@@ -1,0 +1,30 @@
+--- Part A ---
+
+--- Minimizing Rosenbrock's valley function ---
+Starting guess: [0.000000e+00, 0.000000e+00]
+  Iterations to converge: 13
+Calculated minimum location: [9.999525e-01, 9.999050e-01]
+Function value at minimum:   2.253087e-09
+
+Expected min at: (1,1)
+--- Minimizing Himmelblau's function ---
+Basin Hunt 1 starting from: [2.000000e+00, 2.000000e+00]
+  Iterations to converge: 5
+  -> Found Minimum Location: [3.000000e+00, 2.000000e+00]
+  -> Function Value here:    1.436012e-13
+Basin Hunt 2 starting from: [-3.000000e+00, 3.000000e+00]
+  Iterations to converge: 3
+  -> Found Minimum Location: [-2.805118e+00, 3.131313e+00]
+  -> Function Value here:    1.077191e-14
+Basin Hunt 3 starting from: [-3.500000e+00, -3.500000e+00]
+  Iterations to converge: 3
+  -> Found Minimum Location: [-3.779310e+00, -3.283186e+00]
+  -> Function Value here:    1.595991e-12
+Basin Hunt 4 starting from: [3.500000e+00, -3.500000e+00]
+  Iterations to converge: 5
+  -> Found Minimum Location: [3.584428e+00, -1.848127e+00]
+  -> Function Value here:    2.915037e-13
+According to wiki has minimums at (3.0, 2.0), (-2.8, 3.1), (-3.8, -3.3) and (3.6, -1.8)
+--- Part B ---
+
+  Iterations to converge: 0

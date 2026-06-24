@@ -1,0 +1,52 @@
+Running QR Decomposition Tests...
+--- Part A ---
+--- 2. ---
+--- Random matrix A ---
+
+     0.199      0.706      0.954 
+     0.276      0.442      0.205 
+     0.947     0.0417      0.477 
+
+--- Check R is upper triangular ---
+R Matrix:
+      1.01        0.3      0.694 
+         0      0.778       0.74 
+         0          0      0.388 
+
+--- Check Q^T * Q = I ---
+Q^T * Q:
+         1  -1.18e-16  -1.35e-16 
+ -1.18e-16          1   6.64e-16 
+ -1.35e-16   6.64e-16          1 
+Success: QtQ is approximately I!
+
+--- Check Q * R = A ---
+Q * R:
+     0.199      0.706      0.954 
+     0.276      0.442      0.205 
+     0.947     0.0417      0.477 
+Success: QR is approximately A!
+
+--- 3. ---
+--- Random vector b (same size as A) ---
+
+  0.868376    0.56368   0.270027 
+A*x:
+  0.868376    0.56368   0.270027 
+Success: Ax is approximately b!
+
+--- 4. ---
+det(R)= 0.30364
+
+--- Part B ---
+B=inv(A)= 
+
+    -0.666      0.977      0.911 
+    -0.207       2.66     -0.733 
+      1.34      -2.17      0.353 
+check that AB=I: 
+A*B:
+         1  -6.26e-16  -3.68e-17 
+ -4.24e-16          1   4.13e-16 
+ -5.37e-17   4.05e-16          1 
+Success: A*B is approximately I!
