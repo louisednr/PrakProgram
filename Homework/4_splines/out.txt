@@ -1,0 +1,28 @@
+--- Part A---
+Testing on cos(x)
+Data generated
+Debugging quadratic-spline using tables
+
+--- Table {xi=i, yi=1} ---
+i	xi	yi	bi	ci
+0	1.0	1.0	0.00	0.00
+1	2.0	1.0	0.00	0.00
+2	3.0	1.0	0.00	0.00
+3	4.0	1.0	0.00	0.00
+Expected: b=0, c=0
+
+--- Table {xi=i, yi=xi} ---
+i	xi	yi	bi	ci
+0	1.0	1.0	1.00	0.00
+1	2.0	2.0	1.00	0.00
+2	3.0	3.0	1.00	0.00
+3	4.0	4.0	1.00	0.00
+Expected: b=1, c=0
+
+--- Table {xi=i, yi=xi^2} ---
+i	xi	yi	bi	ci
+0	1.0	1.0	2.00	1.00
+1	2.0	4.0	4.00	1.00
+2	3.0	9.0	6.00	1.00
+3	4.0	16.0	8.00	1.00
+Expected: b=2*xi, c=1
