@@ -14,5 +14,13 @@ This project implements a plain Monte Carlo multi-dimensional integration, a mul
 
 ## Quick Start
 To compile the project, run the tests, and generate the performance graph, use:
+
 ```bash
 make
+```
+
+To remove the compiled executable, all intermediate data files (`.txt`), and the generated plots (`.svg`), use the following command:
+
+```bash
+clean
+```
