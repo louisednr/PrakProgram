@@ -1,0 +1,26 @@
+--- Running Monte Carlo Tests ---
+------------------------
+--- A ---
+------------------------
+--- Part 1: Unit Circle Area ---
+       N       Estimate      Est_Error      Act_Error
+     100           3.04       0.170833       0.101593
+   10100        3.14099      0.0163445    0.000602555
+   25100        3.13084      0.0104122       0.010756
+   49600        3.13798     0.00738486     0.00360878
+--- Part 2:  three-dimensional ellipsoid volume ---
+Samples (N):      200000
+Estimated Volume: 25.1729 +/- 0.0536015
+Actual Volume:    25.1327
+Discrepancy:      0.0401388
+------------------------
+--- B ---
+------------------------
+--- Part 1:  Monte-Carlo integrator using quasi-random sequences ---
+Compared the scaling of the error with pseudo-random Monte-Carlo integrator 
+See plot quasi_plot.svg 
+--- Part 2: Singular 3D Integral Comparison ---
+Target exact value      : 1.393203929686
+i)   Simple LCG         : 1.401229088241 (Diff: 0.008025158556)
+ii)  Standard library   : 1.394328230428 (Diff: 0.001124300742)
+iii) Quasi-sequence     : 1.381643197213 (Diff: 0.011560732473)
