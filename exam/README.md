@@ -23,7 +23,7 @@ To expand the scope of the exam question, this implementation includes analytica
 - **Tools**: `make` for automated building and `gnuplot` for generating verification plots.
 
 ## Quick Start
-To compile the code, run the verification tests, and generate the SVG plot (`plot_higgs.svg`), run the following command in your terminal:
+To compile the code, run the verification tests, and generate the SVG plot, run the following command in your terminal:
 
 ```bash
 make
